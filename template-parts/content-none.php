@@ -9,10 +9,11 @@
 ?>
 
 <section class="no-results not-found">
+<?php if(get_option_tree('page_header') == 'no' ) { } else { ?>
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'orbit2theme' ); ?></h1>
 	</header><!-- .page-header -->
-
+<?php } ?>
 	<div class="page-content">
 		<?php if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 

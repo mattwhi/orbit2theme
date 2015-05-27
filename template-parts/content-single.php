@@ -6,8 +6,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+		<?php if(get_option_tree('page_header') == 'no' ) { } else { ?>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
+		<?php } ?>
 		<div class="entry-meta">
 			<?php orbit2theme_posted_on(); ?>
 		</div><!-- .entry-meta -->

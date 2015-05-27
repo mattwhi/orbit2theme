@@ -1,0 +1,13 @@
+.blog-entry {
+	border: 1px solid #ccc;
+	min-height:330px;
+	&:hover {
+	background-color:rgba(0,0,0,0.2);
+	}
+	article {
+
+		h1 {
+			font-size:2em;
+		}
+	}
+}

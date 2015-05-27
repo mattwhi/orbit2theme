@@ -5336,6 +5336,7 @@ tbody.collapse.in {
   position: relative;
   min-height: 50px;
   border: 1px solid transparent;
+  background-color: #fff;
 }
 .navbar:before, .navbar:after {
   content: " ";
@@ -7915,6 +7916,19 @@ button.close {
   .hidden-print {
     display: none !important;
   }
+}
+/*--------------------------------------------------------------
+# Blog
+--------------------------------------------------------------*/
+.blog-entry {
+  border: 1px solid #ccc;
+  min-height: 330px;
+}
+.blog-entry:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.blog-entry article h1 {
+  font-size: 2em;
 }
 
 /*# sourceMappingURL=style.css.map */

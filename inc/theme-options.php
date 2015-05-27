@@ -88,6 +88,52 @@ function custom_theme_options() {
         'section'     => 'basic_options'
       ),
       array(
+        'id'          => 'link_hover_color',
+        'label'       => __( 'Link Hover', 'theme-text-domain' ),
+        'desc'        => 'Set your background',
+        'std'         => '',
+        'type'        => 'colorpicker',
+        'section'     => 'basic_options'
+      ),
+      array(
+        'id'          => 'link_color',
+        'label'       => __( 'Link Color', 'theme-text-domain' ),
+        'desc'        => 'Set your background',
+        'std'         => '',
+        'type'        => 'colorpicker',
+        'section'     => 'basic_options'
+      ),
+      array(
+        'id'          => 'link_visited_color',
+        'label'       => __( 'Link Visited Color', 'theme-text-domain' ),
+        'desc'        => 'Set your background',
+        'std'         => '',
+        'type'        => 'colorpicker',
+        'section'     => 'basic_options'
+      ),
+      array(
+        'id'          => 'page_header',
+        'label'       => __( 'Show Page Header', 'theme-text-domain' ),
+        'desc'        => 'Show Page Header Title',
+        'std'         => '',
+        'type'        => 'select',
+        'section'     => 'basic_options',
+        'choices' => array(
+              array(
+                'value' => '', 
+                'label' => 'Select'
+                ),
+              array(
+                'value' => 'yes', 
+                'label' => 'Yes'
+                ),
+              array(
+                'value' => 'no', 
+                'label' => 'No'
+                )
+              )
+      ),
+      array(
         'id'          => 'css',
         'label'       => 'Custom CSS',
         'desc'        => '',

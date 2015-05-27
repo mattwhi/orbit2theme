@@ -7,13 +7,15 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
+	<section id="primary" class="container">
+		<main id="main" class="site-main row" role="main">
+			<div class="col-md-8">
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
+			<?php if(get_option_tree('page_header') == 'no' ) { } else { ?>
 				<h1 class="page-title"><?php printf( esc_html__( 'Search Results for: %s', 'orbit2theme' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<?php } ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -37,9 +39,10 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		</div>
+		<?php get_sidebar(); ?>
 		</main><!-- #main -->
 	</section><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
