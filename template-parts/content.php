@@ -3,6 +3,7 @@
  * @package Orbit2Theme
  */
 ?>
+
 <?php
 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
 if (!empty($src)) { ?>
@@ -45,6 +46,7 @@ if (!empty($src)) { ?>
 	<footer class="entry-footer">
 		<?php orbit2theme_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+
 </article><!-- #post-## -->
 
 </div>

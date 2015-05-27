@@ -9,7 +9,7 @@
 ?>
 
 	</div><!-- #content -->
-
+	<hr class="divider-large">
 	<footer id="colophon" class="container" role="contentinfo">
 	<div class="row">
 		<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
