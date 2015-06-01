@@ -4,27 +4,37 @@
  *
  * Contains the closing of the #content div and all content after
  *
- * @package _mbbasetheme
+ * @package Orbit2theme
  */
 ?>
 
 	</div><!-- #content -->
-	<hr class="divider-large">
-	<footer id="colophon" class="container" role="contentinfo">
-	<div class="row">
-		<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-	  	<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-	  <!-- Optional: clear the XS cols if their content doesn't match in height -->
-	  	<div class="clearfix visible-xs-block"></div>
-	  	<div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-	  	</div>
-	  	<div class="row">
-			<div class="site-info">
-				<p class="copyright col-md-12">&copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
-			</div><!-- .site-info -->
+
+	<footer id="colophon" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<?php get_sidebar(footer1); ?>
+				</div>
+			  	<div class="col-md-4">
+			  		<?php get_sidebar(footer2); ?>
+			  	</div>
+			  	<div class="col-md-4">
+			  		<?php get_sidebar(footer3); ?>
+			  	</div>
+			</div>
 		</div>
 	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<div class="lower-footer">
+		<div class="container">
+			<div class="row">
+						<div class="site-info">
+							<p class="copyright col-md-12">Copyright &copy; <?php echo date( "Y" ); echo " "; bloginfo( 'name' ); ?></p>
+						</div><!-- .site-info -->
+					</div>
+			</div>
+		</div>
+		</div><!-- #lower-footer -->
 
 <?php wp_footer(); ?>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri(); ?>/lib/bootstrap-sprockets.js"></script>
