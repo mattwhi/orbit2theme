@@ -402,8 +402,7 @@
     color: $navbar-default-brand-color;
     &:hover,
     &:focus {
-      color: $navbar-default-brand-hover-color;
-      background-color: $navbar-default-brand-hover-bg;
+
     }
   }
 
@@ -417,16 +416,14 @@
 
       &:hover,
       &:focus {
-        color: $navbar-default-link-hover-color;
-        background-color: $navbar-default-link-hover-bg;
+
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        color: $navbar-default-link-active-color;
-        background-color: $navbar-default-link-active-bg;
+
       }
     }
     > .disabled > a {
@@ -443,10 +440,10 @@
     border-color: $navbar-default-toggle-border-color;
     &:hover,
     &:focus {
-      background-color: $navbar-default-toggle-hover-bg;
+
     }
     .icon-bar {
-      background-color: $navbar-default-toggle-icon-bar-bg;
+
     }
   }
 
@@ -462,8 +459,6 @@
       &,
       &:hover,
       &:focus {
-        background-color: $navbar-default-link-active-bg;
-        color: $navbar-default-link-active-color;
       }
     }
 
@@ -474,24 +469,20 @@
           color: $navbar-default-link-color;
           &:hover,
           &:focus {
-            color: $navbar-default-link-hover-color;
-            background-color: $navbar-default-link-hover-bg;
           }
         }
         > .active > a {
           &,
           &:hover,
           &:focus {
-            color: $navbar-default-link-active-color;
-            background-color: $navbar-default-link-active-bg;
+
           }
         }
         > .disabled > a {
           &,
           &:hover,
           &:focus {
-            color: $navbar-default-link-disabled-color;
-            background-color: $navbar-default-link-disabled-bg;
+
           }
         }
       }
@@ -514,13 +505,13 @@
     color: $navbar-default-link-color;
     &:hover,
     &:focus {
-      color: $navbar-default-link-hover-color;
+
     }
     &[disabled],
     fieldset[disabled] & {
       &:hover,
       &:focus {
-        color: $navbar-default-link-disabled-color;
+
       }
     }
   }
@@ -536,8 +527,7 @@
     color: $navbar-inverse-brand-color;
     &:hover,
     &:focus {
-      color: $navbar-inverse-brand-hover-color;
-      background-color: $navbar-inverse-brand-hover-bg;
+
     }
   }
 
@@ -551,24 +541,21 @@
 
       &:hover,
       &:focus {
-        color: $navbar-inverse-link-hover-color;
-        background-color: $navbar-inverse-link-hover-bg;
+;
       }
     }
     > .active > a {
       &,
       &:hover,
       &:focus {
-        color: $navbar-inverse-link-active-color;
-        background-color: $navbar-inverse-link-active-bg;
+
       }
     }
     > .disabled > a {
       &,
       &:hover,
       &:focus {
-        color: $navbar-inverse-link-disabled-color;
-        background-color: $navbar-inverse-link-disabled-bg;
+
       }
     }
   }
@@ -596,8 +583,7 @@
       &,
       &:hover,
       &:focus {
-        background-color: $navbar-inverse-link-active-bg;
-        color: $navbar-inverse-link-active-color;
+
       }
     }
 
@@ -614,24 +600,21 @@
           color: $navbar-inverse-link-color;
           &:hover,
           &:focus {
-            color: $navbar-inverse-link-hover-color;
-            background-color: $navbar-inverse-link-hover-bg;
+
           }
         }
         > .active > a {
           &,
           &:hover,
           &:focus {
-            color: $navbar-inverse-link-active-color;
-            background-color: $navbar-inverse-link-active-bg;
+
           }
         }
         > .disabled > a {
           &,
           &:hover,
           &:focus {
-            color: $navbar-inverse-link-disabled-color;
-            background-color: $navbar-inverse-link-disabled-bg;
+
           }
         }
       }
@@ -641,7 +624,7 @@
   .navbar-link {
     color: $navbar-inverse-link-color;
     &:hover {
-      color: $navbar-inverse-link-hover-color;
+ 
     }
   }
 
@@ -649,13 +632,13 @@
     color: $navbar-inverse-link-color;
     &:hover,
     &:focus {
-      color: $navbar-inverse-link-hover-color;
+
     }
     &[disabled],
     fieldset[disabled] & {
       &:hover,
       &:focus {
-        color: $navbar-inverse-link-disabled-color;
+
       }
     }
   }

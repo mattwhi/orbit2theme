@@ -8,3 +8,17 @@
 		jQuery(this).find('article').fadeToggle(500);
 	});
 })(jQuery);
+
+(function($) {
+	jQuery('html').hide().fadeIn(2000);
+})(jQuery);
+
+(function($) {
+	jQuery('.navbar ul.nav li').on('click', function(e){
+		e.preventdefault();
+		var goTo = this.attribute('href');
+			setTimeout(function() {
+				window.location = goTo;
+			}, 1000);
+	});
+})(jQuery);

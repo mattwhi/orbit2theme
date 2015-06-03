@@ -11,6 +11,11 @@ html {
 body {
 	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
 }
+header {
+	background-color: $dark-purple;
+	border-bottom:1px solid #fff;
+}
+
 .divider-large {
   		margin: 80px 0;
 	}

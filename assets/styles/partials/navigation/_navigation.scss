@@ -1,9 +1,45 @@
 /*--------------------------------------------------------------
-## Links
+## Navigation
 --------------------------------------------------------------*/
-@import "links";
+.navbar {
+	background-color:none;
+		ul.nav {
+			text-align: center;
+			li>a {
+			text-transform: uppercase;
+			color:#9e9e9e;
+			&:hover,
+			&:focus {
+				@include transition(all, 0.5s, ease-in-out);
+				background-color:none !important;
+				color:#fff;
+			}
+		}
+	}
+	.navbar-collapse {
+		background-color: $dark-purple;
+	}
+}
+@media (max-width: $grid-float-breakpoint-max) {
+		
+	}
 
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-@import "menus";
+@media (min-width: $grid-float-breakpoint) {
+	.navbar {
+		.main-logo img {
+			width:200px;
+			padding-top:15px;
+			opacity: 1;
+			&:hover {
+				@include transition(all, 0.5s, ease-in-out);
+				opacity: 0.5;
+			}
+		}
+	ul.nav>li>a {
+			line-height: 110px;
+		}
+		.navbar-collapse {
+			margin-top: 0;
+		}	
+	}
+}

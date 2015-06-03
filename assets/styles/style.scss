@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+
 --------------------------------------------------------------*/
 @import "partials/variables-site/variables-site";
 @import "partials/mixins/mixins-master";
@@ -55,6 +56,17 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Typography
 --------------------------------------------------------------*/
 @import "partials/typography/typography";
+
+/*--------------------------------------------------------------
+# Bootstrap
+--------------------------------------------------------------*/
+@import "partials/bootstrap";
+
+@import "partials/bootstrap-mincer";
+
+@import "partials/bootstrap-sprockets";
+
+@import "partials/bootstrap-compass";
 
 /*--------------------------------------------------------------
 # Elements
@@ -105,17 +117,6 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 --------------------------------------------------------------*/
 @import "partials/media/media";
-
-/*--------------------------------------------------------------
-# Bootstrap
---------------------------------------------------------------*/
-@import "partials/bootstrap";
-
-@import "partials/bootstrap-mincer";
-
-@import "partials/bootstrap-sprockets";
-
-@import "partials/bootstrap-compass";
 
 /*--------------------------------------------------------------
 # Blog
